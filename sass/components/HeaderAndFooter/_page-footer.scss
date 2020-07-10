@@ -59,7 +59,8 @@ footer {
   align-items: center;
   border-radius: 50px;
   color: $secondary-white-color;
-  background: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 250ms background-color $cubic;
 
   &:hover,
   &:focus {
@@ -92,6 +93,7 @@ footer {
   border-radius: 4px;
   color: $secondary-white-color;
   background-color: transparent;
+  transition: 250ms border-color $cubic;
 
   &:hover,
   &:focus {
@@ -111,7 +113,7 @@ footer {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-  transition: 250ms transform $cubic;
+  transition: 250ms color $cubic;
   color: rgba(255, 255, 255, 0.6);
 }
 

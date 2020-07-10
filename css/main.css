@@ -981,7 +981,9 @@ footer {
           align-items: center;
   border-radius: 50px;
   color: #ffffff;
-  background: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-transition: 250ms background-color cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms background-color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-icon:hover, .btn-icon:focus {
@@ -1020,6 +1022,8 @@ footer {
   border-radius: 4px;
   color: #ffffff;
   background-color: transparent;
+  -webkit-transition: 250ms border-color cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms border-color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-input:hover, .footer-input:focus {
@@ -1039,10 +1043,8 @@ footer {
   left: 16px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  -webkit-transition: 250ms -webkit-transform cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms -webkit-transform cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1), 250ms -webkit-transform cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
   color: rgba(255, 255, 255, 0.6);
 }
 
