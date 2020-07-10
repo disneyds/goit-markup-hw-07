@@ -1113,4 +1113,133 @@ footer {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
+.portfolio {
+  padding: 94px 0;
+}
+
+/* filtr */
+.filtr-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 63px 24px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 156%;
+  text-align: center;
+  background-color: rgba(33, 150, 243, 0.9);
+  color: #ffffff;
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: 250ms opacity cubic-bezier(0.4, 0, 0.2, 1), 250ms -webkit-transform cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms opacity cubic-bezier(0.4, 0, 0.2, 1), 250ms -webkit-transform cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1), 250ms opacity cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1), 250ms opacity cubic-bezier(0.4, 0, 0.2, 1), 250ms -webkit-transform cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filtr-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.filtr-flex .item + .item {
+  margin-left: 8px;
+}
+
+.btn-secondary {
+  display: inline-block;
+  min-width: 73px;
+  border: 1px solid transparent;
+  padding: 6px 22px;
+  border-radius: 4px;
+  font-weight: 500;
+  color: #212121;
+  background-color: #f5f4fa;
+  -webkit-transition: 250ms all cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms all cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+  -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+          box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.btn-secondary:active {
+  -webkit-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.projects-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolio-card {
+  width: 370px;
+  border: 1px solid #eeeeee;
+  margin-top: 50px;
+  margin-right: 30px;
+}
+
+.portfolio-card:nth-child(3n) {
+  margin-right: 0;
+}
+
+.portfolio-card:nth-child(n + 4) {
+  margin-top: 30px;
+}
+
+.portfolio-card:hover, .portfolio-card:focus-within {
+  -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+          box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+  -webkit-transition: 250ms -webkit-box-shadow cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms -webkit-box-shadow cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms box-shadow cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms box-shadow cubic-bezier(0.4, 0, 0.2, 1), 250ms -webkit-box-shadow cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-card:hover .filtr-item,
+.portfolio-card:focus-within .filtr-item {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.portfolio-card .animation {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-card .description {
+  padding-left: 24px;
+}
+
+.projects-item {
+  margin: 20px 0 4px 0;
+  color: #212121;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 200%;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-card a {
+  display: block;
+  padding-bottom: 20px;
+}
+
+.portfolio-card p {
+  margin: 0;
+}
 /*# sourceMappingURL=main.css.map */
